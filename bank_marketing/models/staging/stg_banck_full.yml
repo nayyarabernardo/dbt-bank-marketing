@@ -1,0 +1,38 @@
+models:
+  - name: stg_banck_full
+    description: 'A tabela STG_BANK_FULL contém informações relacionadas às campanhas de marketing direto de uma instituição bancária em Portugal. Estas campanhas são baseadas em chamadas telefônicas, sendo necessário realizar múltiplos contatos com o mesmo cliente para avaliar a subscrição do produto (depósito a prazo bancário).'
+    columns:
+      - name: age
+        description: 'Idade'
+      - name: job
+        description: 'Tipo de trabalho (categórico: "administrador.","desconhecido","desempregado","gestão","empregada doméstica","empreendedor","estudante","operário","autônomo","aposentado","técnico","serviços")'
+      - name: marital
+        description: 'Estado civil (categórico: “casado”, “divorciado”, “solteiro”; obs: “divorciado” significa divorciado ou viúvo)'
+      - name: education
+        description: 'Classificação de educação do cliente(categórica: "desconhecida","secundária","primária","terciária")'
+      - name: default
+        description: 'Constatação de crédito inadimplente (binário: "sim", "não")'
+      - name: balance
+        description: 'Saldo médio anual, em euros'
+      - name: housing
+        description: 'Se o cliente tem crédito habitação? (binário: "sim", "não")'
+      - name: loan
+        description: 'Se o cliente tem empréstimo pessoal? (binário: "sim", "não")'
+      - name: contact
+        description: 'Tipo de comunicação do contato (categórico: "desconhecido","telefone","celular")'
+      - name: day
+        description: 'Último dia de contato do mês'
+      - name: month
+        description: 'Último mês de contato do ano (categ órico: "jan", "fev", "mar", ..., "nov", "dez")'
+      - name: duration
+        description: 'Duração do último contato, em segundos '
+      - name: campaign
+        description: 'Quantidade de contatos realizados durante esta campanha e para este cliente'
+      - name: pdays
+        description: 'Número de dias que se passaram desde que o cliente foi contatado pela última vez em uma campanha anterior (numérico, -1 significa que o cliente não foi contatado anteriormente)'
+      - name: previous
+        description: 'Quantidade de contatos realizados antes desta campanha e para este cliente (numérico)'
+      - name: previouspoutcome
+        description: 'Resultado da campanha de marketing anterior (categórica: "desconhecido","outro","fracasso","sucesso")'
+      - name: 'y'
+        description: 'Se o cliente subscreveu um depósito a prazo? (binário: "sim", "não")'
