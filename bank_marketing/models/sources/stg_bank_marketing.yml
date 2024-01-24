@@ -1,10 +1,9 @@
-# models/staging/source.yml
-
 version: 2
 
 sources:
   - name: bank_marketing
-
+    description: bank_marketing conjunto de dados teste aqui
+    schema: bank_marketing
     tables:
       - name: bank-full
         description: "Tabela importante de dados comercial"
@@ -43,3 +42,4 @@ sources:
             description: 'Resultado da campanha de marketing anterior (categórica: "desconhecido","outro","fracasso","sucesso")'
           - name: 'y'
             description: 'Se o cliente subscreveu um depósito a prazo? (binário: "sim", "não")'
+      

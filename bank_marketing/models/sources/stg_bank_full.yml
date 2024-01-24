@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: bank_marketing
+    description: bank_full conjunto de dados teste aqui
+    schema: bank_marketing
+    tables:
+      - name: stg_bank_full
+        description: "Tabela importante de dados comercial TESTE"
+        columns:
+          - name: idade
+            description: Idade do cliente
+          - name: trabalho
+            description: Profissão do cliente
+          - name: estado_civil
+            description: Estado civil do cliente
+          - name: educacao
+            description: Nível de educação do cliente
+          - name: saldo_anual
+            description: Saldo médio anual, em euros
+          - name: tem_credito_habitacao
+            description: Se o cliente tem crédito habitação
+          - name: tem_emprestimo_pessoal
+            description: Se o cliente tem empréstimo pessoal
+          
