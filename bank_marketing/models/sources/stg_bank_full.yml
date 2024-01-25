@@ -16,10 +16,37 @@ sources:
             description: Estado civil do cliente
           - name: educacao
             description: Nível de educação do cliente
+          - name: credito_em_default
+            description: Tem crédito em default? (categórica= "no","yes","unknown")
           - name: saldo_anual
             description: Saldo médio anual, em euros
           - name: tem_credito_habitacao
             description: Se o cliente tem crédito habitação
           - name: tem_emprestimo_pessoal
             description: Se o cliente tem empréstimo pessoal
-          
+          - name: tipo_contato
+            description: Tipo de comunicação de contato (categórica= "celular","telefone")
+          - name: mes_ultimo_contato
+            description: Mês do último contato do ano (categórica= "jan", "feb", "mar", ..., "nov", "dec")
+          - name: dia_semana_ultimo_contato
+            description: Dia da semana do último contato (categórica= "mon","tue","wed","thu","fri")
+          - name: duracao_ultimo_contato
+            description: Duração do último contato, em segundos (numérica)
+          - name: numero_contatos_campanha
+            description: Número de contatos realizados durante esta campanha para este cliente (numérica, inclui o último contato)
+          - name: dias_desde_ultimo_contato_anterior
+            description: Número de dias desde o último contato do cliente em uma campanha anterior (numérica; 999 significa que o cliente não foi contatado anteriormente)
+          - name: numero_contatos_anteriores
+            description: Número de contatos realizados antes desta campanha e para este cliente (numérica)
+          - name: resultado_campanha_anterior
+            description: Resultado da campanha de marketing anterior (categórica= "failure","nonexistent","success")
+          - name: taxa_variacao_emprego
+            description: Taxa de variação do emprego - indicador trimestral (numérica)
+          - name: indice_precos_consumidor
+            description: Índice de preços ao consumidor - indicador mensal (numérica)
+          - name: indice_confianca_consumidor
+            description: Índice de confiança do consumidor - indicador mensal (numérica)
+          - name: taxa_euribor_3meses
+            description: Taxa Euribor de 3 meses - indicador diário (numérica)
+          - name: cliente_subscreveu_deposito_prazo
+            description: O cliente subscreveu a um depósito a prazo? (binária= "yes","no") - Variável alvo desejada

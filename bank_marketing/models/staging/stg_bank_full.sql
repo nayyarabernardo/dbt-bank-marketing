@@ -5,9 +5,9 @@ with
     bank_full as (
         select
             age as idade_cliente,
-            job as profissao,
-            marital as estado_civil,
-            education as educacao,
+            job as tipo_profissao,
+            marital as tipo_estadocivil,
+            education as tipo_educacao,
             defaulti as credito_em_default,
             housing as emprestimo_imobiliario,
             loan as emprestimo_pessoal,

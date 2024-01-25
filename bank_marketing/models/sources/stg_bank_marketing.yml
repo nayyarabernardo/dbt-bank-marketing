@@ -66,4 +66,4 @@ sources:
             description: Taxa Euribor de 3 meses - indicador diário (numérica)
 
           - name: y
-            description: O cliente subscreveu a um depósito a prazo? (binária: "yes","no") - Variável alvo desejada
+            description: O cliente subscreveu a um depósito a prazo? (binária= "yes","no") - Variável alvo desejada

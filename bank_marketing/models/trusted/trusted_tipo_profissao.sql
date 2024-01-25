@@ -1,14 +1,14 @@
 {{ config(materialized='table') }}
 
 with 
-    tb_estado_civil as (
+    tb_trabalho as (
         SELECT DISTINCT
-            estado_civil
+            tipo_profissao
         from {{ ref('stg_bank_full') }} 
     )
 
 
 select *,
-    ROW_NUMBER() OVER () AS id_estado_civil,
-from tb_estado_civil
+    ROW_NUMBER() OVER () AS id_profissao,
+from tb_trabalho
 
