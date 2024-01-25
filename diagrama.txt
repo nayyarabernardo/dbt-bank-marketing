@@ -1,0 +1,54 @@
+** LARI: PQ AS CRESCRIÇÕES DAS TABELAS NAO ESTÃO FICANDO
+
+
+Table trusted_educacao {
+  id_educacao integer [primary key]
+  educacao varchar
+}
+
+Table trusted_estado_civil {
+  id_estado_civil integer [primary key]
+  estado_civil varchar
+}
+
+Table trusted_trabalho {
+  id_trabalho integer [primary key]
+  trabalho varchar
+}
+
+Table trusted_cliente {
+  id_cliente integer [primary key]
+  idade varchar
+  id_trabalho integer
+  id_estado_civil integer
+  id_educacao integer
+  saldo_anual integer
+  tem_credito_habitacao varchar
+  tem_emprestimo_pessoal varchar
+}
+
+Table trusted_campanha {
+  id_cliente integer [primary key]
+  tipo_contato varchar
+  ultimo_dia_contato varchar
+  ultimo_mes_contato varchar
+  duracao_ultimo_contato varchar
+  quantidade_contatos_campanha varchar
+  quantidade_contatos_anteriores varchar
+  resultado_campanha varchar
+}
+
+Table trusted_resultado {
+  id_cliente integer [primary key]
+  subscreveu_deposito_prazo varchar
+}
+
+Ref: trusted_cliente.id_educacao > trusted_educacao.id_educacao
+
+Ref: trusted_cliente.id_estado_civil > trusted_estado_civil.id_estado_civil
+
+Ref: trusted_cliente.id_trabalho > trusted_trabalho.id_trabalho
+
+Ref: trusted_campanha.id_cliente > trusted_cliente.id_cliente
+
+Ref: trusted_resultado.id_cliente > trusted_cliente.id_cliente

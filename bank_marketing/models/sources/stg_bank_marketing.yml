@@ -5,41 +5,65 @@ sources:
     description: bank_marketing conjunto de dados teste aqui
     schema: bank_marketing
     tables:
-      - name: bank-full
+      - name: bank-additional-full
         description: "Tabela importante de dados comercial"
         columns:
           - name: age
             description: Idade do cliente
+
           - name: job
             description: Profissão do cliente
+
           - name: marital
             description: Estado civil do cliente
+
           - name: education
             description: Nível de educação do cliente
-          - name: default
-            description: 'Constatação de crédito inadimplente (binário: "sim", "não")'
-          - name: balance
-            description: 'Saldo médio anual, em euros'
+
+          - name: defaulti
+            description: Tem crédito em default? (categórica= "no","yes","unknown")
+
           - name: housing
-            description: 'Se o cliente tem crédito habitação? (binário: "sim", "não")'
+            description: Tem empréstimo imobiliário? (categórica= "no","yes","unknown")
+
           - name: loan
-            description: 'Se o cliente tem empréstimo pessoal? (binário: "sim", "não")'
+            description: Tem empréstimo pessoal? (categórica= "no","yes","unknown")
+
           - name: contact
-            description: 'Tipo de comunicação do contato (categórico: "desconhecido","telefone","celular")'
-          - name: day
-            description: 'Último dia de contato do mês'
+            description: Tipo de comunicação de contato (categórica= "celular","telefone")
+
           - name: month
-            description: 'Último mês de contato do ano (categ órico: "jan", "fev", "mar", ..., "nov", "dez")'
+            description: Mês do último contato do ano (categórica= "jan", "feb", "mar", ..., "nov", "dec")
+
+          - name: day_of_week
+            description: Dia da semana do último contato (categórica= "mon","tue","wed","thu","fri")
+
           - name: duration
-            description: 'Duração do último contato, em segundos '
+            description: Duração do último contato, em segundos (numérica)
+
           - name: campaign
-            description: 'Quantidade de contatos realizados durante esta campanha e para este cliente'
+            description: Número de contatos realizados durante esta campanha para este cliente (numérica, inclui o último contato)
+
           - name: pdays
-            description: 'Número de dias que se passaram desde que o cliente foi contatado pela última vez em uma campanha anterior (numérico, -1 significa que o cliente não foi contatado anteriormente)'
+            description: Número de dias desde o último contato do cliente em uma campanha anterior (numérica; 999 significa que o cliente não foi contatado anteriormente)
+
           - name: previous
-            description: 'Quantidade de contatos realizados antes desta campanha e para este cliente (numérico)'
+            description: Número de contatos realizados antes desta campanha e para este cliente (numérica)
+
           - name: poutcome
-            description: 'Resultado da campanha de marketing anterior (categórica: "desconhecido","outro","fracasso","sucesso")'
-          - name: 'y'
-            description: 'Se o cliente subscreveu um depósito a prazo? (binário: "sim", "não")'
-      
+            description: Resultado da campanha de marketing anterior (categórica= "failure","nonexistent","success")
+
+          - name: emp_var_rate
+            description: Taxa de variação do emprego - indicador trimestral (numérica)
+
+          - name: cons_price_idx
+            description: Índice de preços ao consumidor - indicador mensal (numérica)
+
+          - name: cons_conf_idx
+            description: Índice de confiança do consumidor - indicador mensal (numérica)
+
+          - name: euribor3m
+            description: Taxa Euribor de 3 meses - indicador diário (numérica)
+
+          - name: y
+            description: O cliente subscreveu a um depósito a prazo? (binária: "yes","no") - Variável alvo desejada
