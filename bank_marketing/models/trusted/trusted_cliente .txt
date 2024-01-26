@@ -7,7 +7,8 @@ with
             idade_cliente,
             credito_em_default,
             emprestimo_imobiliario,
-            emprestimo_pessoal
+            emprestimo_pessoal,
+            id_profissao
         from {{ ref('stg_bank_full') }} 
     ),
     tbcliente_com_profissao as (

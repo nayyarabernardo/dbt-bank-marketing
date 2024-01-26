@@ -8,22 +8,20 @@ sources:
       - name: stg_bank_full
         description: "Tabela importante de dados comercial TESTE"
         columns:
-          - name: idade
+          - name: idade_cliente
             description: Idade do cliente
-          - name: trabalho
+          - name: tipo_profissao
             description: Profissão do cliente
-          - name: estado_civil
+          - name: tipo_estadocivil
             description: Estado civil do cliente
-          - name: educacao
+          - name: tipo_educacao
             description: Nível de educação do cliente
           - name: credito_em_default
             description: Tem crédito em default? (categórica= "no","yes","unknown")
-          - name: saldo_anual
+          - name: emprestimo_imobiliario
             description: Saldo médio anual, em euros
           - name: tem_credito_habitacao
             description: Se o cliente tem crédito habitação
-          - name: tem_emprestimo_pessoal
-            description: Se o cliente tem empréstimo pessoal
           - name: tipo_contato
             description: Tipo de comunicação de contato (categórica= "celular","telefone")
           - name: mes_ultimo_contato
