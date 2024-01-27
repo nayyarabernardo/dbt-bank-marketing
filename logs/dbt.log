@@ -148,3 +148,85 @@ Runtime Error
 [0m17:12:59.128585 [debug] [MainThread]: Command `dbt run` failed at 17:12:59.128452 after 0.02 seconds
 [0m17:12:59.129014 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe944b94a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe94396eb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe94396eda0>]}
 [0m17:12:59.129455 [debug] [MainThread]: Flushing usage events
+[0m15:20:35.297210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999e1b0a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999ceb9bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999ceba320>]}
+
+
+============================== 15:20:35.302131 | 98e8b8d1-7cbc-490a-9f78-d5cbe491c5a7 ==============================
+[0m15:20:35.302131 [info ] [MainThread]: Running with dbt=1.5.3
+[0m15:20:35.302978 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/nayara/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:20:35.303602 [info ] [MainThread]: dbt version: 1.5.3
+[0m15:20:35.304102 [info ] [MainThread]: python version: 3.10.12
+[0m15:20:35.304616 [info ] [MainThread]: python path: /usr/bin/python3
+[0m15:20:35.305111 [info ] [MainThread]: os info: Linux-6.5.0-14-generic-x86_64-with-glibc2.35
+[0m15:20:35.305598 [info ] [MainThread]: Using profiles.yml file at /home/nayara/.dbt/profiles.yml
+[0m15:20:35.306090 [info ] [MainThread]: Using dbt_project.yml file at /home/nayara/Downloads/eng_dados/estudo/projetos/dbt-bank-marketing/dbt_project.yml
+[0m15:20:35.306588 [info ] [MainThread]: Configuration:
+[0m15:20:36.957991 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:20:36.958801 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:20:36.959463 [info ] [MainThread]: Required dependencies:
+[0m15:20:36.960003 [debug] [MainThread]: Executing "git --help"
+[0m15:20:36.963750 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:20:36.964396 [debug] [MainThread]: STDERR: "b''"
+[0m15:20:36.964808 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:20:36.965348 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:20:36.965888 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m15:20:36.966825 [debug] [MainThread]: Command `dbt debug` failed at 15:20:36.966675 after 1.68 seconds
+[0m15:20:36.967324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999e1b0a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f998e4c94e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f998e4c8760>]}
+[0m15:20:36.967826 [debug] [MainThread]: Flushing usage events
+[0m15:22:17.427135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe035a9ca30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe034875c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe034876350>]}
+
+
+============================== 15:22:17.430199 | ea4b29c7-79bf-4308-9c76-03c78fbaf0ab ==============================
+[0m15:22:17.430199 [info ] [MainThread]: Running with dbt=1.5.3
+[0m15:22:17.431003 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/nayara/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:22:17.431597 [info ] [MainThread]: dbt version: 1.5.3
+[0m15:22:17.432098 [info ] [MainThread]: python version: 3.10.12
+[0m15:22:17.432613 [info ] [MainThread]: python path: /usr/bin/python3
+[0m15:22:17.433121 [info ] [MainThread]: os info: Linux-6.5.0-14-generic-x86_64-with-glibc2.35
+[0m15:22:17.433635 [info ] [MainThread]: Using profiles.yml file at /home/nayara/.dbt/profiles.yml
+[0m15:22:17.434100 [info ] [MainThread]: Using dbt_project.yml file at /home/nayara/Downloads/eng_dados/estudo/projetos/dbt-bank-marketing/dbt_project.yml
+[0m15:22:17.434562 [info ] [MainThread]: Configuration:
+[0m15:22:18.122301 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:22:18.123022 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:22:18.123639 [info ] [MainThread]: Required dependencies:
+[0m15:22:18.124163 [debug] [MainThread]: Executing "git --help"
+[0m15:22:18.126578 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:22:18.127151 [debug] [MainThread]: STDERR: "b''"
+[0m15:22:18.127527 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:22:18.128072 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:22:18.128633 [info ] [MainThread]: Could not load dbt_project.yml
+
+[0m15:22:18.129536 [debug] [MainThread]: Command `dbt debug` failed at 15:22:18.129383 after 0.71 seconds
+[0m15:22:18.130036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe035a9ca30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe025dc9540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe025dc87f0>]}
+[0m15:22:18.130543 [debug] [MainThread]: Flushing usage events
+[0m15:23:27.101027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f989d394a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f989c16ed10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f989c16ecb0>]}
+
+
+============================== 15:23:27.104638 | 92bb8e5d-257c-4de3-9a83-f2164f1a0ae0 ==============================
+[0m15:23:27.104638 [info ] [MainThread]: Running with dbt=1.5.3
+[0m15:23:27.105899 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/nayara/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:23:27.106662 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/nayara/Downloads/eng_dados/estudo/projetos/dbt-bank-marketing/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:23:27.108992 [debug] [MainThread]: Command `dbt run` failed at 15:23:27.108779 after 0.03 seconds
+[0m15:23:27.109548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f989d394a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f989c16ec20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f989c16ee90>]}
+[0m15:23:27.110071 [debug] [MainThread]: Flushing usage events
+[0m16:33:45.744778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6811b56980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68108457b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6810845750>]}
+
+
+============================== 16:33:45.748952 | 5baaee57-530a-4206-9745-f0b72b3bcff8 ==============================
+[0m16:33:45.748952 [info ] [MainThread]: Running with dbt=1.5.9
+[0m16:33:45.749810 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/nayara/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:33:45.750421 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/nayara/Downloads/eng_dados/estudo/projetos/dbt-bank-marketing/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:33:45.751308 [debug] [MainThread]: Command `dbt run` failed at 16:33:45.751174 after 0.02 seconds
+[0m16:33:45.751744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6811b56980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68108457e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6810845ab0>]}
+[0m16:33:45.752238 [debug] [MainThread]: Flushing usage events

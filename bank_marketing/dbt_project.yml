@@ -25,16 +25,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   stg_bank_full:
-    +materialized: table   # ou 'view' se preferir
-  trusted_campanha:
-    +materialized: table
-  trusted_cliente:
-    +materialized: table
-  trusted_educacao:
-    +materialized: table
-  trusted_estado_civil:
-    +materialized: table
-  trusted_marketing:
-    +materialized: table  
-  trusted_trabalho:
-    +materialized: table
+    materialized: table   # ou 'view' se preferir
+  bank_marketing:
+    materialized: table  

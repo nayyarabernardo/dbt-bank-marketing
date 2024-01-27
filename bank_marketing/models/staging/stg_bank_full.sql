@@ -23,7 +23,7 @@ with
             cons_price_idx as indice_precos_consumidor,
             cons_conf_idx as indice_confianca_consumidor,
             euribor3m as taxa_euribor_3meses,
-            y as cliente_subscreveu_deposito_prazo
+            y as cliente_subdepositoprazo
         from {{ source('bank_marketing', 'bank-additional-full') }}
     )
 

@@ -16,7 +16,7 @@ with
             indice_precos_consumidor,
             indice_confianca_consumidor,
             taxa_euribor_3meses,
-            cliente_subscreveu_deposito_prazo
+            cliente_subdepositoprazo
         from {{ ref('stg_bank_full') }} 
     )
 

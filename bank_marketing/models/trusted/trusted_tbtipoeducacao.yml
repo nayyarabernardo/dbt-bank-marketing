@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bank_marketing
+    description: bank_marketing conjunto de dados teste aqui
+    schema: bank_marketing
+    tables:
+      - name: trusted_tbtipoeducacao
+        description: "Descricao de escolaridade"
+        columns:
+          - name: id_educacao
+            description: Idade do cliente
+
+          - name: tipo_educacao
+            description: Profissão do cliente

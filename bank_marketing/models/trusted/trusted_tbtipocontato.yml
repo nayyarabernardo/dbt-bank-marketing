@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bank_marketing
+    description: bank_marketing conjunto de dados teste aqui
+    schema: bank_marketing
+    tables:
+      - name: trusted_tbtipocontato
+        description: "Descricao do tipo de Contato que foi feito com o cliente"
+        columns:
+          - name: id_tipocontato
+            description: "Chave Pk da tabela"
+
+          - name: tipo_contato
+            description: "Tipo de Contato que foi feito com o cliente"
