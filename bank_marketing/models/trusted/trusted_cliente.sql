@@ -7,34 +7,30 @@ with
             idade_cliente,
             credito_em_default,
             emprestimo_imobiliario,
-            emprestimo_pessoal
+            emprestimo_pessoal,
+            tipo_profissao,
+            tipo_estadocivil,
+            tipo_educacao
         from {{ ref('stg_bank_full') }} 
     ),
-    tbcliente_com_profissao as (
+    tbcliente_enriquecido as (
         select
-            tc.*,
-            ttp.profissao 
-        from tbcliente tc
-        left join {{ ref('trusted_tbtipoprofissao') }} ttp
-        on tc.id_profissao = ttp.id_profissao
-    ),
-    tbcliente_com_estadocivil as (
-        select
-            tcpp.*,
-            tte.estado_civil 
-        from tbcliente_com_profissao tcpp
-        left join {{ ref('trusted_tbtipoestadocivil') }} tte
-        on tcpp.id_estadocivil = tte.id_estadocivil
-    ),
-    tbcliente_final as (
-        select
-            tce.*,
-            ttei.tipo_educacao 
-        from tbcliente_com_estadocivil tce
-        left join {{ ref('trusted_tbtipoeducacao') }} ttei
-        on tce.id_educacao = ttei.id_educacao
+            c.id_cliente,
+            c.idade_cliente,
+            c.credito_em_default,
+            c.emprestimo_imobiliario,
+            c.emprestimo_pessoal,
+            p.id_profissao,
+            ec.id_estadocivil,
+            ed.id_educacao
+        from tbcliente c
+        left join {{ ref('trusted_tbtipoprofissao') }} p
+        on c.tipo_profissao = p.tipo_profissao
+        left join {{ ref('trusted_tbtipoestadocivil') }} ec
+        on c.tipo_estadocivil = ec.tipo_estadocivil
+        left join {{ ref('trusted_tbtipoeducacao') }} ed
+        on c.tipo_educacao = ed.tipo_educacao
     )
 
--- Seleção final
 select *
-from tbcliente_final
+from tbcliente_enriquecido
