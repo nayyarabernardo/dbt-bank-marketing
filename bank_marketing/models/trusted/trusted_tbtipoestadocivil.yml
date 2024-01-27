@@ -6,7 +6,7 @@ sources:
     schema: bank_marketing
     tables:
       - name: trusted_tbtipoestadocivil
-        description: "Descricao do tipo de estado civil do  ciente cliente"
+        description: "Descricao do tipo de estado civil do cliente"
         columns:
           - name: id_estadocivil
             description: "Chave Pk da tabela"

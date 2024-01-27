@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bank_marketing
+    description: bank_marketing conjunto de dados teste aqui
+    schema: bank_marketing
+    tables:
+      - name: trusted_tbtipoprofissao
+        description: "Descricao do tipo de Profissão cliente"
+        columns:
+          - name: id_profissao
+            description: "Chave Pk da tabela"
+
+          - name: tipo_profissao
+            description: "Tipo de Profissão do clinete"
