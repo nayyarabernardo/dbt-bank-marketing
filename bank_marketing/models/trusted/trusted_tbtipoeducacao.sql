@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 with 
     tb_educacao as (
         SELECT DISTINCT

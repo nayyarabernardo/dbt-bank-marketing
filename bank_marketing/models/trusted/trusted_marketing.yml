@@ -1,0 +1,52 @@
+version: 2
+
+models:
+      - name: trusted_marketing
+        description: "Tabela Fato Dados de teste"
+        columns:
+          - name: id_cliente
+            description: "APENAS TESTE"
+
+          - name: id_contato
+            description: "APENAS TESTE"
+          
+          - name: mes_ultimo_contato
+            description: "APENAS TESTE"
+
+          - name: dia_semana_ultimo_contato
+            description: "APENAS TESTE"
+
+          - name: duracao_ultimo_contato
+            description: "APENAS TESTE"
+          
+          - name: numero_contatos_campanha
+            description: "APENAS TESTE"
+
+          - name: dias_desde_ultimo_contato_anterior
+            description: "APENAS TESTE"
+
+          - name: numero_contatos_anteriores
+            description: "APENAS TESTE"
+
+          - name: resultado_campanha_anterior
+            description: "APENAS TESTE"
+          
+          - name: taxa_variacao_emprego
+            description: "APENAS TESTE"
+
+          - name: indice_precos_consumidor
+            description: "APENAS TESTE"
+
+          - name: indice_confianca_consumidor
+            description: "APENAS TESTE"
+
+          - name: taxa_euribor_3meses
+            description: "APENAS TESTE"
+          
+          - name: cliente_subdepositoprazo
+            description: "APENAS TESTE"
+
+
+
+
+

@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 with 
     tb_tipocontato as (
         SELECT DISTINCT

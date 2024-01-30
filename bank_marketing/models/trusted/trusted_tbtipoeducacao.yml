@@ -1,10 +1,6 @@
 version: 2
 
-sources:
-  - name: bank_marketing
-    description: bank_marketing conjunto de dados teste aqui
-    schema: bank_marketing
-    tables:
+models:
       - name: trusted_tbtipoeducacao
         description: "Descricao de escolaridade"
         columns:

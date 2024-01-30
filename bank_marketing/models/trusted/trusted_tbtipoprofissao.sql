@@ -1,4 +1,3 @@
-{{ config(materialized='table') }}
 
 with 
     tb_trabalho as (
