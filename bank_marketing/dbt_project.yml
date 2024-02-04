@@ -63,3 +63,11 @@ models:
       +persist_docs:
         relation: true  
         columns: true
+
+seeds:
+  stg_bank_full:
+    +persist_docs:
+      relation: true
+      columns: true
+    +enabled: true
+    +schema: seed_data  
