@@ -1,6 +1,8 @@
 /credentials
 
+
+venv
+
 analise-exploratoria.txt
 diagrama.txt
-requirements.txt
-venv
+requirements.txt 
